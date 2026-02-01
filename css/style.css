@@ -1172,6 +1172,43 @@ section {
     min-height: 120px;
 }
 
+/* Кнопка отправки формы */
+.submit-btn {
+    width: 100%;
+    padding: 16px 30px;
+    background: linear-gradient(135deg, #6B5DD3 0%, #5B8DEF 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: var(--transition-normal);
+    box-shadow: 0 4px 15px rgba(107, 93, 211, 0.3);
+}
+
+.submit-btn::before {
+    content: "\f1d8";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(107, 93, 211, 0.4);
+    background: linear-gradient(135deg, #5B4DC3 0%, #4B7DDF 100%);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
 .form-success {
     display: none;
     text-align: center;
