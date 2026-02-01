@@ -538,21 +538,19 @@
                 </div>
 
                 <div class="contact-form-wrapper" data-aos="fade-left">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form fade-in">
+                   <form action="https://api.web3forms.com/submit" method="POST" class="contact-form fade-in">
     
-    <!-- Access Key - ЗАМЕНИ НА СВОЙ! -->
+    <!-- Access Key -->
     <input type="hidden" name="access_key" value="0b314178-01fe-4767-bd09-a65854932fb1">
     
-    <!-- Настройки email -->
+    <!-- Email настройки -->
     <input type="hidden" name="subject" value="🎯 Новая заявка с сайта-портфолио | Nikita Chuchaev">
-    <input type="hidden" name="from_name" value="Portfolio Website Form">
+    <input type="hidden" name="from_name" value="Portfolio Contact Form">
     <input type="hidden" name="redirect" value="https://devvnikita-web.github.io/myportfolio/#contact">
     
-    <!-- Имя клиента -->
+    <!-- Имя -->
     <div class="form-group">
-        <label for="name">
-            <span data-en="Your Name" data-ru="Ваше имя">Ваше имя</span>
-        </label>
+        <label for="name">Ваше имя</label>
         <input 
             type="text" 
             id="name" 
@@ -562,11 +560,9 @@
             placeholder="Иван Иванов">
     </div>
     
-    <!-- Email клиента -->
+    <!-- Email -->
     <div class="form-group">
-        <label for="email">
-            <span data-en="Your Email" data-ru="Ваш Email">Email</span>
-        </label>
+        <label for="email">Email</label>
         <input 
             type="email" 
             id="email" 
@@ -577,9 +573,7 @@
     
     <!-- Телефон (необязательно) -->
     <div class="form-group">
-        <label for="phone">
-            <span data-en="Phone (optional)" data-ru="Телефон (необязательно)">Телефон (необязательно)</span>
-        </label>
+        <label for="phone">Телефон (необязательно)</label>
         <input 
             type="tel" 
             id="phone" 
@@ -587,41 +581,9 @@
             placeholder="+371 XX XXX XXX">
     </div>
     
-    <!-- Тип проекта -->
-    <div class="form-group">
-        <label for="project-type">
-            <span data-en="Project Type" data-ru="Тип проекта">Тип проекта</span>
-        </label>
-        <select id="project-type" name="project_type" required>
-            <option value="" disabled selected>Выберите тип проекта</option>
-            <option value="Лендинг (€200-€500)">Лендинг - €200-€500</option>
-            <option value="Бизнес-сайт (€400-€800)">Бизнес-сайт - €400-€800</option>
-            <option value="Портфолио (€300-€600)">Портфолио - €300-€600</option>
-            <option value="WordPress (€500-€1000)">WordPress - €500-€1000</option>
-            <option value="Редизайн (€300-€700)">Редизайн сайта - €300-€700</option>
-            <option value="Другое">Другое</option>
-        </select>
-    </div>
-    
-    <!-- Бюджет -->
-    <div class="form-group">
-        <label for="budget">
-            <span data-en="Budget Range" data-ru="Бюджет">Бюджет</span>
-        </label>
-        <select id="budget" name="budget" required>
-            <option value="" disabled selected>Выберите диапазон бюджета</option>
-            <option value="€200-€500">€200-€500</option>
-            <option value="€500-€1000">€500-€1000</option>
-            <option value="€1000-€2000">€1000-€2000</option>
-            <option value="€2000+">€2000+</option>
-        </select>
-    </div>
-    
     <!-- Сообщение -->
     <div class="form-group">
-        <label for="message">
-            <span data-en="Project Details" data-ru="Детали проекта">Сообщение</span>
-        </label>
+        <label for="message">Сообщение</label>
         <textarea 
             id="message" 
             name="message" 
@@ -631,15 +593,14 @@
             placeholder="Расскажите о вашем проекте..."></textarea>
     </div>
     
-    <!-- Защита от спама (honeypot) -->
+    <!-- Защита от спама -->
     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
     
     <!-- Кнопка отправки -->
-    <button type="submit" class="submit-btn">
-        <span data-en="Send Message" data-ru="Отправить сообщение">Отправить сообщение</span>
-    </button>
+    <button type="submit" class="submit-btn">Отправить сообщение</button>
     
 </form>
+
 
                     <div class="form-success" id="formSuccess">
                         <i class="fas fa-check-circle"></i>
